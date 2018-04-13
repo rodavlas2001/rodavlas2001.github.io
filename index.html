@@ -1,0 +1,224 @@
+<!-- Proyecto de web - Inicio -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="logo2.png">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Ubuntu|Gugi" rel="stylesheet">
+	<title>Hiddenverse - Inicio</title>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width="250px";
+		}
+		function closeNav() {
+			document.getElementById("mySidenav").style.width="0";
+		}
+	</script>
+	<style>
+		body{
+			background-image: url("background.png");
+			background-position: 45%;
+			background-repeat: no-repeat;
+			background-color: black;
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+		.encabezado{
+			width: 96%;
+			height: 10%;
+			top: 0;
+			left: 0;
+			position: absolute;
+			padding: 2%;
+			text-align: center;
+		}
+		.tituloencabezado{
+			font-family: 'Gugi', cursive;
+			color: white;
+			font-size: 40px;
+			float: left;
+			text-shadow: 3px 3px 2px black;
+		}
+		.imgencabezado{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 18%;
+			box-shadow: 0px 1px 2px black;
+		}
+		.sidenav{
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			font-family: 'Ubuntu', sans-serif;
+			background-color: #111;
+			overflow-x: hidden;
+			transition: 0.5s;
+			padding-top: 60px;
+			border-right: 1px solid black;
+			box-shadow: 2px 0px 2px black;
+		}
+		.sidenav label{
+			padding: 8px 8px 8px 32px;
+			font-size: 25px;
+			color: #f1f1f1;
+			display: block;
+		}
+		.sidenav a{
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 20px;
+			color: #818181;
+			display: block;
+			transition: 0.3s;
+		}
+		.sidenav a:hover{
+			color: #f1f1f1;
+		}
+		.sidenav .closebtn{
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 50px;
+			margin-left: 50px;
+		}
+		@media screen and (max-height: 450px){
+			.sidenav{padding-top: 15px;}
+			.sidenav a{font-size: 18px;}
+		}
+		.menubarra{
+			width: 98%;
+			font-family: 'Ubuntu', sans-serif;
+			background-color: #0f0f0f;
+			padding: 1%;
+			overflow: hidden;
+			color: white;
+			left: 0;
+			position: absolute;
+			top: 18%;
+			box-shadow: 0px 2px 2px black;
+			border-top: 1px solid black;
+		}
+		.amenubarra{
+			color: white;
+			font-size: 20px;
+			padding: 1.5%;
+			text-decoration: none;
+			transition: 0.2s;
+			text-shadow: 2px 2px 1px black;
+		}
+		.amenubarra:hover{
+			background-color: #191919;
+			transition: 0.2s;
+		}
+		.imgmenubarra{
+			float: right;
+			filter: drop-shadow(0px 0px 5px black);
+		}
+		.divbody{
+			width: 75%;
+			background-color: #0f0f0f;
+			margin: 0 auto;
+			margin-top: 15%;
+			border: 0;
+			padding: 2%;
+			height: auto;
+			flex: 1 0 auto;
+			box-shadow: 0 -2px 5px 3px black;
+		}
+		.divcontent1{
+			background-color: #161616;
+			color: white;
+			font-family: 'Ubuntu', sans-serif;
+			padding: 3%;
+			margin: 0 auto;
+			text-align: justify;
+			border-radius: 5px;
+			font-size: 15px;
+			margin-top: 2%;
+			margin-bottom: 2%;
+			width: 80%;
+			box-shadow: 0px -2px 8px black;
+		}
+		.footer{
+			clear: both;
+			position: relative;
+			margin-top: 2%;
+			padding: 1%;
+			text-align: center;
+			color: white;
+			flex: 0 0 auto;
+		}
+		.h1content1{
+			color: #c1bfff;
+			font-family: 'Audiowide', cursive;
+			font-weight: lighter;
+			text-align: center;
+			font-size: 50px;
+			text-shadow: 2px 2px 1px black;
+		}
+		.imgcontent1{
+			border-radius: 5px;
+			border: 2px solid black;
+			position: relative;
+			margin-left: 18%;
+		}
+		.acc{
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+		}
+		.pcontent1{
+			font-size: 20px;
+			color: #c1bfff;
+		}
+	</style>
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+		<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+			<label>Recientes:</label>
+			<a href="mscap5.html">Magic Shadows - Capitulo 5</a>
+			<a href="mscap4.html">Magic Shadows - Capitulo 4</a>
+			<a href="mscap3.html">Magic Shadows - Capitulo 3</a>
+			<a href="mscap2.html">Magic Shadows - Capitulo 2</a>
+			<a href="mscap1.html">Magic Shadows - Capitulo 1</a>
+			<a href="mscap0.html">Magic Shadows - Prólogo</a>
+	</div>
+	<img class="imgencabezado" src="bgencabezado.png" alt="">
+	<div class="encabezado">
+			<label class="tituloencabezado">H i d d e n v e r s e</label>
+	</div>
+	<div class="menubarra">
+			<a class="amenubarra" href="javascript:void(0)" onclick="openNav()">&#9776;</a>
+			<a class="amenubarra" href="index.html">Inicio</a>
+			<a class="amenubarra" href="historias.html">Historias</a>
+			<a class="amenubarra" href="libros.html">Libros</a>
+			<a class="amenubarra" href="ref.html">Referencias</a>
+			<a class="amenubarra" href="info.html">Información</a>
+			<a class="amenubarra" href="anuncios.html">Anuncios</a>
+			<img class="imgmenubarra" src="logo2.png" alt="" height="32px" width="32px;">
+		</div>
+	<div class="divbody">
+		<div class="divcontent1">
+			<h1 class="h1content1">Bienvenido a Hiddenverse</h1><br>
+			<img class="imgcontent1" src="logo.png" alt="" height="25%" width="65%"><br>
+			<p class="pcontent1">
+				El espacio donde encontrarás todas las historias del Hiddenverse, escritas por Rodavlas. Y demás historias...<br><br>
+				Explora el menú de arriba! :)
+			</p>
+		</div>
+		</div>
+		<div class="footer">
+		<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+			<img class="imgcc" alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+			<br />Images on this site are licensed under a 
+			<a class="acc" rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>.
+		</div> 
+</body>
+</html>
