@@ -7,6 +7,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Audiowide|Ubuntu|Gugi" rel="stylesheet">
 	<title>Hiddenverse - Inicio</title>
 	<script>
+		if (screen.width>1680)
+			document.getElementById(body).style.backgroundsize="100%";
 		function openNav() {
 			document.getElementById("mySidenav").style.width="250px";
 		}
@@ -20,7 +22,6 @@
 			background-position: 45%;
 			background-repeat: no-repeat;
 			background-color: black;
-			background-size: auto;
 			display: flex;
 			flex-direction: column;
 			height: 100%;
