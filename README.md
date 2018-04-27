@@ -1,4 +1,4 @@
-# Indice
+# Índice
 Bootstrap
 
 Práctica #1: <a href="https://rodavlas2001.github.io/practicabootstrap5/practica1bootstrap.html">Grids</a>
